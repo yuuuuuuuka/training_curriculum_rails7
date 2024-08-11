@@ -1,0 +1,19 @@
+current directory: /Users/katouyuuka/projects/training_curriculum_rails7/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/katouyuuka/.rbenv/versions/3.2.0/bin/ruby -I /Users/katouyuuka/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/katouyuuka/projects/training_curriculum_rails7/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240811-76094-bfuags sitelibdir\=./.gem.20240811-76094-bfuags clean
+
+current directory: /Users/katouyuuka/projects/training_curriculum_rails7/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240811-76094-bfuags sitelibdir\=./.gem.20240811-76094-bfuags
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/katouyuuka/projects/training_curriculum_rails7/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240811-76094-bfuags sitelibdir\=./.gem.20240811-76094-bfuags install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20240811-76094-bfuags/bootsnap
+
+current directory: /Users/katouyuuka/projects/training_curriculum_rails7/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240811-76094-bfuags sitelibdir\=./.gem.20240811-76094-bfuags clean
