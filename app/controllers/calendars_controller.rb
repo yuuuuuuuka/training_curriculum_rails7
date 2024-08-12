@@ -2,7 +2,7 @@ class CalendarsController < ApplicationController
 
   # １週間のカレンダーと予定が表示されるページ
   def index
-    getWeek
+    get_week
     @plan = Plan.new
   end
 
@@ -18,15 +18,19 @@ class CalendarsController < ApplicationController
     params.require(:plan).permit(:date, :plan)
   end
 
-  def getWeek
-    today_wday_number = Date.today.wday #wdayメソッをtoday_wday_numbeに代入
+
+
+    
+
+  def get_week
+today_wday_number = Date.today.wday #wdayメソッをtoday_wday_numbeに代入
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
     #＠today_wday =wdays[today_wday_number] #wdayメソッドで曜日に添字をつけた
 
 
     # Dateオブジェクトは、日付を保持しています。下記のように`.today.day`とすると、今日の日付を取得できます。
     @todays_date = Date.today
-    # 例)　今日が2月1日の場合・・・ Date.today.day => 1日
+    # 例)今日が2月1日の場合・・・ Date.today.day => 1日
 
     @week_days = []
 
@@ -45,6 +49,9 @@ class CalendarsController < ApplicationController
       end
 
       days = { :month => (@todays_date + x).month, :date => (@todays_date + x).day, :plans => today_plans, :wday =>wdays[wday_num]}#＠today_wday }#wdaysから値を取り出す記述
+
+      days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans}
+
       @week_days.push(days)
     
   end
